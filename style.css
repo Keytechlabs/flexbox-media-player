@@ -1,5 +1,11 @@
 ul {
-  display: flex; /*or inline-flex*/
+  display: flex; /*or inline-flex
+  flex-direction: row || column || row-reverse || column-reverse;
+  flex-wrap: wrap;warp-reverse
+  flex-flow: row wrap;
+  justify-content: flex-start || flex-end || center || space-between || space-around
+  align-items: flex-start || flex-end || center || stretch || baseline*/
+
 }
 
 li {
@@ -8,3 +14,4 @@ li {
   background-color: #8cacea;
   margin: 8px;
 }
+
