@@ -1,12 +1,22 @@
 ul {
-  display: flex; /*or inline-flex
+  display: flex;
+  border: 1px solid red;
+    padding: 0;
+    list-style: none;
+    justify-content: space-between;
+    align-items: flex-start; /*affects all flex-items*/
+    min-height: 50%;
+    background-color: #e8e8e9;
+      /*or inline-flex
       flex-direction: row || column || row-reverse || column-reverse;
       flex-wrap: wrap;warp-reverse
       flex-flow: row wrap;
-      justify-content: flex-start || flex-end || center || space-between || space-around
-      align-items: flex-start || flex-end || center || stretch || baseline*/
-
+      justify-content: flex-start || flex-end || center || spa
+      -between || space-around
+      align-items: flex-start || flex-end || center || stretch ||
+      baseline*/
 }
+
 
 li {
   width: 100px;
@@ -18,8 +28,6 @@ li {
     flex-basis: 150px;
     flex-shrink: 1;
     relative flex? vs Absloute? */
-    
-
 }
 
 
@@ -27,4 +35,9 @@ li {
     
 li:nth-child(1) {
   order: 1; /*give it a value higher than 0*/
+}
+
+
+li:first-of-type {
+    align-self: auto /*|| flex-start || flex-end || center || baseline || stretch*/
 }
